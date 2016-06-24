@@ -1,6 +1,44 @@
 /** Document Ready Functions **/
 /********************************************************************/
 
+var $contactForm = $('#contactform');
+$contactForm.submit(function(e) {
+  e.preventDefault();
+  $.ajax({
+    url: '//formspree.io/mikkosh@hotmail.com',
+    method: 'POST',
+    data: $(this).serialize(),
+    dataType: 'json',
+    beforeSend: function() {
+      $(".loading").css("display", "initial");
+    },
+    success: function(data) {
+      
+      $(".loading").css("display", "none");
+      
+      //show fields, not create them
+      $(".success").css("display", "initial");
+      
+      //$contactForm.find('.alert--loading').hide();
+      //$contactForm.append('<div class="alert alert--success">Message sent!</div>');
+      
+      //disable fields
+      $contactForm.find('#subs').prop('disabled', true);
+      
+    },
+    error: function(err) {
+      //$contactForm.find('.alert--loading').hide();
+      //$contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
+      
+      $(".loading").css("display", "none");
+      
+      //show fields, not create them
+      $(".failure").css("display", "initial");
+    }
+  });
+});
+
+
 $(document).ready(function () {
 
   // Resive video
