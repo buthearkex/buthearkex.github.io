@@ -62,7 +62,7 @@ function scaleBannerVideoSize(element) {
         , 'margin-left': 0
       });
     } else {
-      videoHeight = windowHeight;
+      videoHeight = windowHeight +300;
       videoWidth = videoHeight / videoAspectRatio;
       $(this).css({
         'margin-top': 0
