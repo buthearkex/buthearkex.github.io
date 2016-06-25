@@ -1,0 +1,426 @@
+/*!
+ * Start Bootstrap - Stylish Portfolio Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+
+/* Global Styles */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.text-vertical-center {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.text-vertical-center h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 6em;
+  font-weight: 700;
+  color: #68d0b9;
+}
+
+.text-vertical-center h3 {
+  font-size: 4em;
+  font-weight: 700;
+  color: white;
+}
+
+.text-vertical-center h4 {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: white;
+}
+
+
+/* Custom Button Styles */
+
+.btn-dark {
+  border-radius: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.btn-light {
+  border-radius: 0;
+  color: #333;
+  background-color: rgb(255, 255, 255);
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* Custom Horizontal Rule */
+
+hr.small {
+  max-width: 100px;
+}
+
+
+/* Side Menu */
+
+#sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  margin-right: -250px;
+  overflow-y: auto;
+  background: #222;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 40px;
+}
+
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+  color: #999;
+}
+
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+  height: 55px;
+  font-size: 18px;
+  line-height: 55px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: #999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+#menu-toggle {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+#sidebar-wrapper.active {
+  right: 250px;
+  width: 250px;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.toggle {
+  margin: 5px 5px 0 0;
+}
+
+
+/* Header */
+
+.header {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../img/sci_perirhinalcortex_free.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  filter: blur(2px) grayscale(75%);
+  -webkit-filter: blur(2px) grayscale(75%);
+  position: relative;
+}
+
+.info {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+}
+
+video {
+  width: 500px !important;
+  -webkit-box-shadow: 0px 11px 29px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 11px 29px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 11px 29px 0px rgba(0, 0, 0, 0.75);
+}
+
+.more {
+  margin-top: 50px;
+}
+
+
+/* About */
+
+.about {
+  padding: 50px 0;
+}
+
+
+/* Services */
+
+.services {
+  padding: 50px 0;
+  background-color: #ebebeb !important;
+  color: black;
+}
+
+.service-item {
+  margin-bottom: 60px;
+}
+
+.descr {
+  font-size: 1.75em;
+  margin-bottom: 100px;
+}
+
+.fa-stack-2x {
+  color: white;
+}
+
+.fa-stack-1x {
+  color: black;
+}
+
+
+/* Callout */
+
+.callout {
+  display: table;
+  width: 100%;
+  height: 700px;
+  color: #fff;
+  background: url(../img/callout.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.call {
+  color: #346a5e !important;
+  text-decoration-color: white;
+}
+
+span.highlight {
+  background-color: white;
+}
+
+
+/* Portfolio */
+
+.portfolio {
+  padding: 50px 0;
+}
+
+
+/* Call to Action */
+
+.call-to-action {
+  padding: 50px 0;
+}
+
+.call-to-action .btn {
+  margin: 10px;
+}
+
+
+/* Footer */
+
+footer {
+  padding: 100px 0;
+}
+
+.success,
+.failure,
+.loading {
+  display: none;
+}
+
+.form-style-7 {
+  max-width: 400px;
+  margin: 50px auto;
+  background: #fff;
+  border-radius: 2px;
+  padding: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.form-style-7 h1 {
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0px 0px 20px 0px;
+  color: #5C5C5C;
+  font-size: x-large;
+}
+
+.form-style-7 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form-style-7 li {
+  display: block;
+  padding: 9px;
+  border: 1px solid #DDDDDD;
+  margin-bottom: 30px;
+  border-radius: 3px;
+}
+
+.form-style-7 li:last-child {
+  /*border:none;
+    margin-bottom: 0px;*/
+  text-align: center;
+}
+
+.form-style-7 li > label {
+  display: block;
+  float: left;
+  margin-top: -19px;
+  background: #FFFFFF;
+  height: 23px;
+  padding: 2px 5px 2px 5px;
+  color: #B9B9B9;
+  font-size: 14px;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-style-7 input[type="text"],
+.form-style-7 input[type="date"],
+.form-style-7 input[type="datetime"],
+.form-style-7 input[type="email"],
+.form-style-7 input[type="number"],
+.form-style-7 input[type="search"],
+.form-style-7 input[type="time"],
+.form-style-7 input[type="url"],
+.form-style-7 input[type="password"],
+.form-style-7 textarea,
+.form-style-7 select {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 100%;
+  display: block;
+  outline: none;
+  border: none;
+  height: 25px;
+  line-height: 25px;
+  font-size: 16px;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.form-style-7 input[type="text"]:focus,
+.form-style-7 input[type="date"]:focus,
+.form-style-7 input[type="datetime"]:focus,
+.form-style-7 input[type="email"]:focus,
+.form-style-7 input[type="number"]:focus,
+.form-style-7 input[type="search"]:focus,
+.form-style-7 input[type="time"]:focus,
+.form-style-7 input[type="url"]:focus,
+.form-style-7 input[type="password"]:focus,
+.form-style-7 textarea:focus,
+.form-style-7 select:focus {}
+
+.form-style-7 li > span {
+  background: #F3F3F3;
+  display: block;
+  padding: 3px;
+  margin: 0 -9px -9px -9px;
+  text-align: center;
+  color: #C0C0C0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+
+.form-style-7 textarea {
+  resize: none;
+}
+
+.form-style-7 input[type="submit"],
+.form-style-7 input[type="button"] {
+  background: #2471FF;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  border-bottom: 3px solid #5994FF;
+  border-radius: 3px;
+  color: #D2E2FF;
+}
+
+.form-style-7 input[type="submit"]:hover,
+.form-style-7 input[type="button"]:hover {
+  background: #6B9FFF;
+  color: #fff;
+}
+
+@media(max-width:700px) {
+  video {
+    width: 200px !important;
+  }
+  .info {
+    top: 5%;
+  }
+  .text-vertical-center h1 {
+    font-size: 3.5em;
+  }
+  .text-vertical-center h3 {
+    font-size: 2.5em;
+  }
+  .text-vertical-center h4 {
+    font-size: 1.75em;
+  }
+}
