@@ -50,13 +50,13 @@ $(document).ready(function () {
 
   initBannerVideoSize('.video-container .poster img');
   initBannerVideoSize('.video-container .filter');
-  initBannerVideoSize('.video-container video');
+  //initBannerVideoSize('.video-container video');
 
   $(window).on('resize', function () {
     scaleVideoContainer();
     scaleBannerVideoSize('.video-container .poster img');
     scaleBannerVideoSize('.video-container .filter');
-    scaleBannerVideoSize('.video-container video');
+    //scaleBannerVideoSize('.video-container video');
   });
 
 });
@@ -104,7 +104,7 @@ function scaleBannerVideoSize(element) {
         , 'margin-left': 0
       });
     } else {
-      videoHeight = windowHeight + 310;
+      videoHeight = windowHeight + 410;
       videoWidth = videoHeight / videoAspectRatio;
       $(this).css({
         'margin-top': 0

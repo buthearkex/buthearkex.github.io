@@ -92,9 +92,10 @@ h1{
 }
 
 .video-container video {
-  position: absolute;
+  /*position: absolute;*/
   z-index: 0;
   bottom: 0;
+  height: 130%;
 }
 
 .video-container video.fillWidth {
