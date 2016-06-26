@@ -276,6 +276,35 @@ span.highlight {
 }
 
 
+/* About us */
+
+.bg-secondary {
+  background: url(../img/europe.jpg) no-repeat center center scroll;
+  min-height: 600px;
+  color: white;
+}
+
+.descr-text {
+  margin-top: 80px !important;
+  font-size: 3em;
+}
+
+.bg {
+  background-color: rgba(128, 128, 128, 0.53);
+}
+
+.us-text {
+  font-size: 1.5em;
+  color: white;
+}
+
+.us-box {
+  margin-top: 50px;
+  padding: 30px;
+  border-radius: 3px;
+}
+
+
 /* Footer */
 
 footer {
