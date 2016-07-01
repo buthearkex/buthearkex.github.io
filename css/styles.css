@@ -223,6 +223,7 @@ video {
 .descr {
   font-size: 1.75em;
   margin-bottom: 100px;
+  text-align: center;
 }
 
 .fa-stack-2x {
@@ -452,4 +453,8 @@ footer {
   .text-vertical-center h4 {
     font-size: 1.75em;
   }
+}
+
+.rasp {
+  width: 300px;
 }
